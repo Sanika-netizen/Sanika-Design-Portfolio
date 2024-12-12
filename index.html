@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sanika Patil's Portfolio</title>
+      <link rel="stylesheet" href="./assets/css/home_page.css">
+      <link rel="stylesheet" href="./assets/css/form.css">
+      <script src="./assets/js/homepage.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+   </head>
+   <header>
+      <div class="logo"><a href="./index.html"><img src="./assets/images/Logo.jpg" alt="Illustration with details about Sanika" /></a></div>
+      <nav>
+         <ul>
+      
+            <li><a href="#about" onclick="location.href='#about-us'">About</a></li>
+            <li><a href="#work" onclick="location.href='#work'">Work</a></li>
+            <li><a href="#contact" onclick="location.href='#about-us'">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <section class="welcome-section">
+         <div class="intro">
+            <div class="text-content">
+            </div>
+            <div class="image-content">
+               <img src="./assets/images/welcome to portfolio.png" alt="Illustration with details about Sanika" />
+            </div>
+         </div>
+      </section>
+   </main> 
+   <body>
+      <div class="row">
+         <div class="image-container"id="work">
+            <h2><font color="#767266">Click on the projects to see more</font></h2>
+            <a href="./zine.html"><img src="./assets/images/Picture hyperlink-1.jpg" alt="Image 1"></a>
+            <a href="./urbandarji.html"><img src="./assets/images/Picture hyperlink-2.jpg" alt="Image 2"></a>
+            <a href="./picturebook.html"><img src="./assets/images/Picture hyperlink-3.jpg" alt="Image 3"></a>
+            <a href="./brochure.html"><img src="./assets/images/Picture hyperlink-4.jpg" alt="Image 4"></a>
+         </div>
+      </div>
+      <div class="row" id="about-us" style="background-color:#292929">
+         <div class="column">
+            <h1>LET'S CONNECT!</h1>
+            <p>I appreciate combining creativity and 
+               technical skills to create unique ideas,
+               whether working with a team or independently.
+            </p>
+            <p>I am always ready to work alongside creative
+               minds who design with intention!
+            </p>
+         </div>
+         <div class="column" id="about-us">
+            <form id="myForm" onsubmit="event.preventDefault(); exportToExcel();">
+               <label for="name">Name*</label>
+               <div style="display: flex; gap: 10px;">
+                  <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+               </div>
+               <label for="email">Email*</label>
+               <input type="email" id="email" name="email" placeholder="Email id" required>
+               <label for="message">Message*</label>
+               <textarea id="message" name="message" placeholder="Your message" required></textarea>
+               <button type="submit">Submit</button>
+            </form>
+            <p id="success-message"></p>
+         </div>
+      </div>
+   </body>
+</html>
